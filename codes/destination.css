@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+
+
+body{
+    color: white;
+    background-image: url("/assets/destination/background-destination-desktop.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:  "Barlow Condensed", sans-serif;
+    overflow: hidden;
+}
+.logo{
+    margin: 55px 0 0 64px;
+}
+.logo, nav{
+    display: inline;
+}
+.open-menu, .close-menu{
+    display: none;
+}
+
+nav ul{
+    float: right;
+    display: flex;
+    margin: 55px 0px;  
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+
+}
+nav li:hover{
+    border-bottom: 3px solid grey;
+    border-radius: 3px;
+
+}
+
+li.active{
+   border-bottom: 2px solid white;
+   border-radius: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 20px 0px;
+    margin: 0px 70px;
+    letter-spacing: 4.725px;
+}
+
+.container{
+    display: flex;
+}
+.flex1 img{
+    justify-content: flex-start;
+    margin: 7.5em 0 0 15em;
+}
+.flex1 h2{
+    justify-content: flex-start;
+    margin: 2em 0 0 5em;
+    font-weight: 5;
+    letter-spacing: 5px;
+}
+.flex1 b{
+    color: grey;
+}
+
+.flex2 ul{
+    display: flex;
+    list-style-type:none;
+    word-spacing: 50px;
+    
+
+}
+.flex2 a{
+    color: white;
+    text-decoration: none;
+    
+   
+}
+.flex2 li{
+    padding-bottom: 7px;
+    margin-right: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    word-spacing: 50px;
+}
+.flex2 h1{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    letter-spacing: 15px;
+    font-family: "Bellefair", serifs;
+    line-height: 114.6px;
+
+}
+
+.flex2 li.active{
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+
+}
+
+.flex2{
+    margin: 12rem 30rem;
+    font-size: 20px;
+    
+}
+.flex2 p{
+    font-family:  "Barlow", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 444px;
+}
+hr{
+    margin-top:40px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.inner-flex ul li:nth-child(2){
+    font-family:  "Bellefair", serifs;
+    font-size: 28px;
+}
+.inner-flex ul li:nth-child(1){
+    font-size: 14px;
+}
+.inner-flex{
+    display: flex;
+}
+.inner-flex ul{
+    display: inline;
+    margin-right: 2px;
+}
+.inner-flex li{
+    word-spacing: 5px;
+}
+h1{
+    font-family:  "Bellefair", serifs;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 425px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    header{
+        max-width: 390px;
+        width: 100%;
+    }
+    body{
+        color: white;
+        background-image: url("/assets/destination/background-destination-mobile.jpg");
+        background-attachment: fixed;
+        background-position: 10%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+
+    }
+    .container{
+        overflow-x: hidden;
+    }
+    .logo{
+        margin: 20px 0 0 20px;
+        height: 40px;
+        width: 40px;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav{
+        display: inline;
+    }
+    nav.active{
+        display: inline;
+
+    }
+    nav img{
+        float: right;
+        margin-top: 30px;
+    }
+    .open-menu{
+        display: flex;
+    }
+    .flex1 h2{
+        margin-left: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        width: 300px;
+        height: 19px;
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .flex1 img{
+        height: 170px;
+        width: 170px;
+        margin: 30px 0 0 120px;
+    }
+    .flex2{
+        margin-left: -320px;
+        margin-top: 290px;
+        margin-right: 0;
+        margin-bottom: 0;
+        width: fit-content;
+    }
+    .flex2 ul{
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 40px;
+    }
+    .flex2 li{
+        letter-spacing: 2.36px;
+        word-spacing: 10px;
+
+    }
+    .flex2 h1{
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 64.18px;
+        margin-left: 60px;
+        letter-spacing: normal;
+    }
+    .flex2 p{
+        font-size: 15px;
+        line-height: 25px;
+        width: 327px;
+        font-family: "Barlow";
+        margin: 0 0 0 0;
+    }
+    .inner-flex{
+        display: inline-block;
+        text-align: center;
+        margin-left: 79.5px;
+
+    }
+
+}

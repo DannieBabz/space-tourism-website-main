@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+
+
+body{
+    color: white;
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:  "Barlow Condensed", sans-serif;
+    overflow: hidden;
+}
+.logo{
+    margin: 55px 0 0 64px;
+}
+.logo, nav{
+    display: inline;
+}
+.open-menu, .close-menu{
+    display: none;
+}
+
+nav ul{
+    float: right;
+    display: flex;
+    margin: 55px 0px;  
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+
+}
+nav li:hover{
+    border-bottom: 3px solid grey;
+    border-radius: 3px;
+
+}
+
+li.active{
+   border-bottom: 2px solid white;
+   border-radius: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 20px 0px;
+    margin: 0px 70px;
+    letter-spacing: 4.725px;
+}
+
+.contents{
+    display: flex;
+}
+h2{
+    margin: 2em 0 2em 5em;
+    font-weight: 5;
+    letter-spacing: 5px;
+}
+
+b{
+    color: grey;
+}
+p{
+    width: 400px;
+ 
+}
+.container, .dots{
+
+    margin: 6em 0 2em 3em;
+}
+.container p:nth-child(1){
+    margin: 48px 0 0 120px;
+    font-family: "Bellefair", serifs;
+    font-size: 35px;
+    width: 600px;
+    line-height: 64px;
+}
+.container p:nth-child(2){
+    font-family: "Bellefair", serifs;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 40px 120px;
+    width: 600px;
+    
+}
+.container p:nth-child(3){
+    margin: 4px 120px;
+    line-height: 30px;
+    height: 150px;
+    font-family: 'barlow', sans-serif;
+    
+}
+
+.dots{
+    display: flex;
+    margin: 48px 100px;
+}
+.dot{
+    background-color: #383737;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 4em 1em;
+    cursor: pointer;
+}
+.dot:hover{
+    background: grey;
+    transition: ease-out 0.5s;
+}
+#active{
+    background-color: white;
+}
+.image{
+    margin-left: 25em;
+    margin-top: 3em;
+}
+@media screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow-x: hidden; */
+    }
+    /* header{
+        max-width: 390px;
+        width: 100%;
+    } */
+    body{
+        color: white;
+        background-image: url("/assets/crew/background-crew-mobile.jpg");
+        background-attachment: fixed;
+        background-position: 10%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+
+    }
+    /* .container{
+        overflow-x: hidden;
+    } */
+    .logo{
+        margin: 20px 0 0 20px;
+        height: 40px;
+        width: 40px;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav{
+        display: inline;
+    }
+    nav.active{
+        display: inline;
+
+    }
+    nav img{
+        float: right;
+        margin-top: 30px;
+    }
+    .open-menu{
+        display: flex;
+        margin: 40px 40px 0 0;
+    }
+    .flex1 h2{
+        margin-left: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        width: 300px;
+        height: 19px;
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .flex1{
+        display: flex;
+        flex-direction: column;
+    }
+    .image img{
+        margin: 0;
+        height: 223px;
+        margin: 100px 0 0 140px;
+    }
+    .flex1 .grey{
+        margin: 100px 0 0 0;
+        font-size: 16px;
+    }
+    .flex1 p:nth-child(2) span{
+        font-size: 24px;
+        font-family: "Bellefair" serifs;
+        margin-left: 50px;
+    }
+    .dots{
+        margin-top: 0;
+        order: 1;
+    }
+
+
+}
